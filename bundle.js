@@ -173,12 +173,12 @@ var Header = function (_React$Component) {
   }
 
   _createClass(Header, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return _react2.default.createElement(
-        'h1',
-        null,
-        'FitorMiss'
+        "section",
+        { className: "header" },
+        "FitorMiss"
       );
     }
   }]);
