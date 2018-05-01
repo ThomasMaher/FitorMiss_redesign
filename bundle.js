@@ -135,10 +135,10 @@ exports.default = Root;
 
 /***/ }),
 
-/***/ "./app/components/headers.js":
-/*!***********************************!*\
-  !*** ./app/components/headers.js ***!
-  \***********************************/
+/***/ "./app/components/dropdown.js":
+/*!************************************!*\
+  !*** ./app/components/dropdown.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -163,6 +163,74 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var Dropdown = function (_React$Component) {
+  _inherits(Dropdown, _React$Component);
+
+  function Dropdown(props) {
+    _classCallCheck(this, Dropdown);
+
+    return _possibleConstructorReturn(this, (Dropdown.__proto__ || Object.getPrototypeOf(Dropdown)).call(this, props));
+  }
+
+  _createClass(Dropdown, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "dropdown top-bar__dropdown" },
+        _react2.default.createElement(
+          "div",
+          { className: "dropdown__title" },
+          this.props.title
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "dropdown__arrow" },
+          _react2.default.createElement("img", { src: "/images/dropdown_arrow.png" })
+        )
+      );
+    }
+  }]);
+
+  return Dropdown;
+}(_react2.default.Component);
+
+exports.default = Dropdown;
+
+/***/ }),
+
+/***/ "./app/components/headers.js":
+/*!***********************************!*\
+  !*** ./app/components/headers.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _dropdown = __webpack_require__(/*! ./dropdown */ "./app/components/dropdown.js");
+
+var _dropdown2 = _interopRequireDefault(_dropdown);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var Header = function (_React$Component) {
   _inherits(Header, _React$Component);
 
@@ -173,12 +241,36 @@ var Header = function (_React$Component) {
   }
 
   _createClass(Header, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "section",
-        { className: "header" },
-        "FitorMiss"
+        'section',
+        { className: 'top-bar' },
+        _react2.default.createElement(
+          'div',
+          { className: 'top-bar__main' },
+          _react2.default.createElement('img', {
+            className: '.top-bar__title',
+            style: { height: "4.5rem" },
+            src: '/images/logo.png',
+            alt: 'FitorMiss' }),
+          _react2.default.createElement(_dropdown2.default, { title: 'location' }),
+          _react2.default.createElement(_dropdown2.default, { title: 'Class Type' }),
+          _react2.default.createElement(_dropdown2.default, { title: 'Amenities' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'top-bar__profile' },
+          _react2.default.createElement('img', {
+            className: '.top-bar__menu',
+            style: { top: '-.9rem' },
+            src: '/images/menu.png',
+            alt: 'FitorMiss' }),
+          _react2.default.createElement('img', {
+            className: '.top-bar__pic',
+            src: '/images/profile.png',
+            alt: 'FitorMiss' })
+        )
       );
     }
   }]);

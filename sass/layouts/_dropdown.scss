@@ -1,0 +1,32 @@
+.dropdown {
+  width: 22%;
+  border: solid 2px $color-primary-dark;
+  display: flex;
+  overflow: hidden;
+  
+  & > * {
+    text-align: center;
+    padding-top: .3rem;
+  }
+  
+  &__title {
+    width: 81%;
+    color: $text-green;
+    
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+  
+  &__arrow {
+    width: 19%;
+    background-color: $text-green;
+    color: $color-primary-dark;
+    border-left: solid 1.3px $color-primary-dark;
+    // padding-top: .5rem;
+    
+    & > img {
+      height: 2.2rem;
+    }
+  }
+}
