@@ -52,8 +52,14 @@ body {
       top: -.5rem;
       margin-left: 8.5%; }
 
+.timescroll {
+  width: 10rem;
+  height: 100%;
+  position: absolute;
+  background-color: #272C3F; }
+
 .dropdown {
-  width: 22%;
+  width: 19.5rem;
   border: solid 2px #1B726C;
   display: flex;
   overflow: hidden; }
@@ -73,3 +79,7 @@ body {
     border-left: solid 1.3px #1B726C; }
     .dropdown__arrow > img {
       height: 2.2rem; }
+
+.classes__container {
+  position: absolute;
+  height: calc(100% - $header-height); }

@@ -99,6 +99,10 @@ var _headers = __webpack_require__(/*! ./headers.js */ "./app/components/headers
 
 var _headers2 = _interopRequireDefault(_headers);
 
+var _classes = __webpack_require__(/*! ./classes/classes.js */ "./app/components/classes/classes.js");
+
+var _classes2 = _interopRequireDefault(_classes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var store = (0, _store.configureStore)();
@@ -123,7 +127,8 @@ var Root = function Root() {
       _react2.default.createElement(
         App,
         null,
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _headers2.default })
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _headers2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/classes', component: _classes2.default })
       )
     )
     // </Provider>
@@ -132,6 +137,139 @@ var Root = function Root() {
 };
 
 exports.default = Root;
+
+/***/ }),
+
+/***/ "./app/components/classes/classes.js":
+/*!*******************************************!*\
+  !*** ./app/components/classes/classes.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _timescroll = __webpack_require__(/*! ./timescroll */ "./app/components/classes/timescroll.js");
+
+var _timescroll2 = _interopRequireDefault(_timescroll);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Classes = function (_React$Component) {
+  _inherits(Classes, _React$Component);
+
+  function Classes() {
+    _classCallCheck(this, Classes);
+
+    return _possibleConstructorReturn(this, (Classes.__proto__ || Object.getPrototypeOf(Classes)).apply(this, arguments));
+  }
+
+  _createClass(Classes, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'classes__container' },
+        _react2.default.createElement(_timescroll2.default, null),
+        _react2.default.createElement('section', null)
+      );
+    }
+  }]);
+
+  return Classes;
+}(_react2.default.Component);
+
+exports.default = Classes;
+
+/***/ }),
+
+/***/ "./app/components/classes/timescroll.js":
+/*!**********************************************!*\
+  !*** ./app/components/classes/timescroll.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TimeScroll = function (_React$Component) {
+  _inherits(TimeScroll, _React$Component);
+
+  function TimeScroll() {
+    _classCallCheck(this, TimeScroll);
+
+    return _possibleConstructorReturn(this, (TimeScroll.__proto__ || Object.getPrototypeOf(TimeScroll)).apply(this, arguments));
+  }
+
+  _createClass(TimeScroll, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "section",
+        { className: "timescroll" },
+        _react2.default.createElement(
+          "div",
+          { className: "timescroll__bar" },
+          _react2.default.createElement(
+            "p",
+            { className: "timescroll__text timescroll__text-sooner" },
+            "Sooner"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "timescroll__slot" },
+            _react2.default.createElement("div", { className: "timescroll__switch" })
+          ),
+          _react2.default.createElement(
+            "p",
+            { className: "timescroll__text timescroll__text-later" },
+            "Later"
+          )
+        )
+      );
+    }
+  }]);
+
+  return TimeScroll;
+}(_react2.default.Component);
+
+exports.default = TimeScroll;
 
 /***/ }),
 

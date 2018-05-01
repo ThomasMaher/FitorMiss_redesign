@@ -3,7 +3,9 @@ import { Provider, connect } from 'react-redux';
 import { withRouter, HashRouter, Route } from 'react-router-dom';
 
 import {configureStore} from '../store';
+
 import Header from './headers.js';
+import Classes from './classes/classes.js';
 
 const store = configureStore();
 
@@ -21,6 +23,7 @@ const Root = () => {
         <HashRouter>
           <App>
             <Route path="/" component={Header} />
+            <Route path="/classes" component={Classes} />
 
           </App>
         </HashRouter>
