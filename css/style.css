@@ -64,7 +64,8 @@ body {
     width: 81%;
     color: #6FDCC1; }
     .dropdown__title:hover {
-      background-color: #2ACAB0; }
+      background-color: #1B726C;
+      color: white; }
   .dropdown__arrow {
     width: 19%;
     background-color: #6FDCC1;

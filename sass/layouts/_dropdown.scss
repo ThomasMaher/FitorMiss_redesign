@@ -14,7 +14,8 @@
     color: $text-green;
     
     &:hover {
-      background-color: $color-primary;
+      background-color: $color-primary-dark;
+      color: white;
     }
   }
   
