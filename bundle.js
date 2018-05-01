@@ -180,9 +180,11 @@ var ClassDetails = function (_React$Component) {
   _createClass(ClassDetails, [{
     key: "render",
     value: function render() {
+      this.props = this.props.props;
+      console.log(this.props);
       return _react2.default.createElement(
         "div",
-        { className: "row class-detail" },
+        { className: "class_row class-detail" },
         _react2.default.createElement(
           "div",
           { className: "col-1-3 class-detail__img" },

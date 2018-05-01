@@ -84,6 +84,8 @@ body {
   height: 19rem;
   margin: 0 auto;
   margin-left: 9rem; }
+  .class-detail__img {
+    height: 20rem; }
 
 .dropdown {
   width: 19.5rem;
@@ -108,7 +110,6 @@ body {
       height: 2.2rem; }
 
 .class_row {
-  max-width: 40rem;
   margin: 0 auto; }
   .class_row:not(:last-child) {
     margin-bottom: 8rem; }
