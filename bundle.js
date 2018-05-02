@@ -181,24 +181,23 @@ var ClassDetails = function (_React$Component) {
     key: "render",
     value: function render() {
       this.props = this.props.props;
-      console.log(this.props);
       return _react2.default.createElement(
         "div",
         { className: "class_row class-detail" },
         _react2.default.createElement(
           "div",
-          { className: "col-1-3 class-detail__img" },
+          { className: "col-1-of-3 class-detail__img" },
           _react2.default.createElement("img", { src: this.props.img })
         ),
         _react2.default.createElement(
           "div",
-          { className: "col-1-3 class-detail__info" },
+          { className: "col-1-of-3 class-detail__info" },
           this.props.title,
           this.props.desc
         ),
         _react2.default.createElement(
           "div",
-          { className: "col-1-3 class-detail__reg" },
+          { className: "col-1-of-3 class-detail__reg" },
           this.props.timRange
         )
       );
@@ -269,7 +268,6 @@ var Classes = function (_React$Component) {
         _react2.default.createElement(
           'section',
           { className: 'classlist' },
-          '// In reality this will be a list of classes coming in as props. // Each classe\'s props will still be passed down as props\'.',
           _react2.default.createElement(_class_detail2.default, { props: {
               img: "/images/gym_pic.png",
               title: "Restorative Yoga",
@@ -287,6 +285,10 @@ var Classes = function (_React$Component) {
 
   return Classes;
 }(_react2.default.Component);
+
+// In reality this will be a list of classes coming in as props.
+// Each classe's props will still be passed down as props'.
+
 
 exports.default = Classes;
 

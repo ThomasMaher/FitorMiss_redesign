@@ -13,8 +13,6 @@ export default class Classes extends React.Component {
       
       <section className="classlist">
       
-      // In reality this will be a list of classes coming in as props.
-      // Each classe's props will still be passed down as props'.
       <ClassDetail props={{
         img: "/images/gym_pic.png",
         title: "Restorative Yoga",
@@ -31,3 +29,7 @@ export default class Classes extends React.Component {
     ) 
   }
 }
+
+
+// In reality this will be a list of classes coming in as props.
+// Each classe's props will still be passed down as props'.
