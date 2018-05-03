@@ -22,7 +22,7 @@ export default class ClassDetails extends React.Component {
           </div>
         </div>
 
-        <div className="col-10-of-33 class-detail__info">
+        <div className="col-10-of-33 class-detail__info clearfix">
           <div className="class-detail__type-logos">
             <div className="type-logo">
               Yoga
@@ -32,11 +32,11 @@ export default class ClassDetails extends React.Component {
             </div>
           </div>
 
-          <div>
+          <div className="clearfix">
             <h3>Today, {this.props.timeRange}</h3>
           </div>
 
-          <div>
+          <div className="clearfix">
             <button className="btn">Buy Pass</button>
           </div>
         </div>

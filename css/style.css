@@ -1,3 +1,8 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
 *,
 *::after,
 *::before {
@@ -59,7 +64,8 @@ h5 {
   border: solid 1.4px #6FDCC1;
   color: #6FDCC1;
   font-size: 1.7rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-color: white; }
 
 .top-bar {
   width: 100%;
@@ -127,7 +133,8 @@ h5 {
   position: relative;
   left: 2.5rem; }
   .class-detail:first-child {
-    top: 3rem; }
+    top: 3rem;
+    margin-bottom: 6rem; }
   .class-detail__img {
     height: 100%; }
   .class-detail__info {
@@ -142,9 +149,17 @@ h5 {
     .class-detail__info:last-child {
       padding-right: 1rem;
       margin-top: -1rem; }
+      .class-detail__info:last-child::after {
+        content: "";
+        display: table;
+        clear: both; }
       .class-detail__info:last-child * {
         float: right;
         margin-top: 5%; }
+        .class-detail__info:last-child *::after {
+          content: "";
+          display: table;
+          clear: both; }
   .class-detail__type-logos {
     display: flex;
     width: 100%;
@@ -177,10 +192,11 @@ h5 {
 .class_row {
   margin: 0 auto;
   height: 18vw;
-  min-width: 95rem;
-  min-height: 19rem; }
-  .class_row:nth-child(1) {
-    margin-bottom: 5rem; }
+  min-width: 92.5rem;
+  min-height: 19rem;
+  max-height: 23.7rem; }
+  .class_row:not(:first-child) {
+    margin-bottom: 3rem; }
   .class_row::after {
     content: "";
     display: table;
@@ -195,7 +211,8 @@ h5 {
   .class_row .col-1-of-3 {
     width: calc(100% / 3); }
   .class_row .col-10-of-33 {
-    width: calc((100% * 3) / 11); }
+    width: 24vw;
+    max-width: 37.3rem; }
   .class_row .col-1-of-6 {
     width: calc((100%) / 6); }
   .class_row .col-3-of-6 {
@@ -222,4 +239,5 @@ h5 {
   background-color: white;
   z-index: -1;
   margin: 0 auto;
-  margin-left: 6.3rem; }
+  margin-left: 6.3rem;
+  overflow: scroll; }

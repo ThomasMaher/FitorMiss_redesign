@@ -1,10 +1,12 @@
 .class_row {
   margin: 0 auto;
   height: 18vw;
-  min-width: 95rem;
+  min-width: 92.5rem;
+  // max-width: 157.8rem;
   min-height: 19rem;
+  max-height: 23.7rem;
 
-  &:nth-child(1) {
+  &:not(:first-child) {
     margin-bottom: $gutter-vertical;
   }
 
@@ -28,7 +30,8 @@
   }
 
   .col-10-of-33 {
-    width: calc((100% * 3) / 11);
+    width: 24vw;
+    max-width: 37.3rem;
   }
 
   .col-1-of-6 {

@@ -9,6 +9,7 @@
 
   &:first-child {
     top: 3rem;
+    margin-bottom: 6rem;
   }
 
   &__img {
@@ -32,8 +33,10 @@
     &:last-child {
       padding-right: 1rem;
       margin-top: -1rem;
+      @include clearfix
 
       * {
+        @include clearfix
         float: right;
         margin-top: 5%;
       }

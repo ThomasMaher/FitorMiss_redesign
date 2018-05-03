@@ -241,7 +241,7 @@ var ClassDetails = function (_React$Component) {
         ),
         _react2.default.createElement(
           "div",
-          { className: "col-10-of-33 class-detail__info" },
+          { className: "col-10-of-33 class-detail__info clearfix" },
           _react2.default.createElement(
             "div",
             { className: "class-detail__type-logos" },
@@ -258,7 +258,7 @@ var ClassDetails = function (_React$Component) {
           ),
           _react2.default.createElement(
             "div",
-            null,
+            { className: "clearfix" },
             _react2.default.createElement(
               "h3",
               null,
@@ -268,7 +268,7 @@ var ClassDetails = function (_React$Component) {
           ),
           _react2.default.createElement(
             "div",
-            null,
+            { className: "clearfix" },
             _react2.default.createElement(
               "button",
               { className: "btn" },
