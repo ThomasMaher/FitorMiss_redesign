@@ -12,7 +12,7 @@
     float: left;
 
     &:nth-child(2) {
-      margin-right: $gutter-horizontal;
+      // margin-right: $gutter-horizontal;
     }
   }
 
@@ -25,7 +25,11 @@
   }
 
   .col-1-of-6 {
-    width: calc((100% - (#{$gutter-horizontal})) / 6);
+    width: calc((100%) / 6);
+  }
+
+  .col-3-of-6 {
+    width: calc((100%) * 3 / 8);
   }
 
   .col-2-of-6 {

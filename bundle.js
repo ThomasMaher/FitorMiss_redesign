@@ -191,7 +191,9 @@ var ClassDetails = function (_React$Component) {
         ),
         _react2.default.createElement(
           "div",
-          { className: "col-1-of-3 class-detail__info" },
+          {
+            className: "col-3-of-6 class-detail__info",
+            style: { marginLeft: "-2rem", padding: "1rem 0" } },
           _react2.default.createElement(
             "h2",
             null,
@@ -220,7 +222,11 @@ var ClassDetails = function (_React$Component) {
               "Cardio"
             )
           ),
-          this.props.timeRange
+          _react2.default.createElement(
+            "div",
+            null,
+            this.props.timeRange
+          )
         )
       );
     }

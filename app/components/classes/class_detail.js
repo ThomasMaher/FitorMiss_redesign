@@ -9,7 +9,9 @@ export default class ClassDetails extends React.Component {
           <img src={this.props.img} className="class-detail__img"/>
         </div>
         
-        <div className="col-1-of-3 class-detail__info">
+        <div 
+          className="col-3-of-6 class-detail__info" 
+          style={{marginLeft: "-2rem", padding: "1rem 0"}}>
           <h2>{this.props.title}</h2>
           <p>{this.props.desc}</p>
         </div>
@@ -24,7 +26,7 @@ export default class ClassDetails extends React.Component {
             </div>
           </div>
           
-          {this.props.timeRange}
+          <div>{this.props.timeRange}</div>
         </div>
       </div>
     )
