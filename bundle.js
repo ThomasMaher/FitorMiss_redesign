@@ -193,7 +193,7 @@ var ClassDetails = function (_React$Component) {
           "div",
           {
             className: "col-3-of-6 class-detail__info",
-            style: { marginLeft: "-2rem", padding: "1rem 0" } },
+            style: { marginLeft: "-2rem", padding: "1rem 0", paddingLeft: "1rem" } },
           _react2.default.createElement(
             "h2",
             null,
@@ -203,11 +203,45 @@ var ClassDetails = function (_React$Component) {
             "p",
             null,
             this.props.desc
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "class-detail__info-prices" },
+            _react2.default.createElement(
+              "h5",
+              null,
+              "WAS\xA0"
+            ),
+            _react2.default.createElement(
+              "h2",
+              null,
+              "$",
+              this.props.was,
+              "\xA0\xA0"
+            ),
+            _react2.default.createElement(
+              "h5",
+              { style: { color: "#6FDCC1" } },
+              "NOW\xA0"
+            ),
+            _react2.default.createElement(
+              "h2",
+              { style: { color: "#6FDCC1" } },
+              "$",
+              this.props.now
+            ),
+            _react2.default.createElement(
+              "h5",
+              null,
+              " ",
+              this.props.left,
+              " Left"
+            )
           )
         ),
         _react2.default.createElement(
           "div",
-          { className: "col-1-of-3 class-detail__info" },
+          { className: "col-10-of-33 class-detail__info" },
           _react2.default.createElement(
             "div",
             { className: "class-detail__type-logos" },
@@ -225,7 +259,21 @@ var ClassDetails = function (_React$Component) {
           _react2.default.createElement(
             "div",
             null,
-            this.props.timeRange
+            _react2.default.createElement(
+              "h3",
+              null,
+              "Today, ",
+              this.props.timeRange
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            _react2.default.createElement(
+              "button",
+              { className: "btn" },
+              "Buy Pass"
+            )
           )
         )
       );
@@ -296,6 +344,27 @@ var Classes = function (_React$Component) {
         _react2.default.createElement(
           'section',
           { className: 'classlist' },
+          _react2.default.createElement(_class_detail2.default, { props: {
+              img: "/images/gym_pic.png",
+              title: "Restorative Yoga",
+              desc: desc,
+              was: '35',
+              now: '17',
+              type: ['Yoga', 'Cardio'],
+              countdown: "4hr 5min 30sec",
+              timeRange: "6:30PM - 7:15PM",
+              left: "4hr 5min"
+            } }),
+          _react2.default.createElement(_class_detail2.default, { props: {
+              img: "/images/gym_pic.png",
+              title: "Restorative Yoga",
+              desc: desc,
+              was: '35',
+              now: '17',
+              type: ['Yoga', 'Cardio'],
+              countdown: "4hr 5min 30sec",
+              timeRange: "6:30PM - 7:15PM"
+            } }),
           _react2.default.createElement(_class_detail2.default, { props: {
               img: "/images/gym_pic.png",
               title: "Restorative Yoga",

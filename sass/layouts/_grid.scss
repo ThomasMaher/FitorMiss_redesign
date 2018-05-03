@@ -1,6 +1,8 @@
 .class_row {
   margin: 0 auto;
   height: 18vw;
+  min-width: 95rem;
+  min-height: 19rem;
 
   &:nth-child(1) {
     margin-bottom: $gutter-vertical;
@@ -10,9 +12,10 @@
 
   [class^="col-"] {
     float: left;
+    height: 100%;
 
     &:nth-child(2) {
-      // margin-right: $gutter-horizontal;
+      margin-right: $gutter-horizontal;
     }
   }
 
@@ -24,16 +27,21 @@
     width: calc(100% / 3);
   }
 
+  .col-10-of-33 {
+    width: calc((100% * 3) / 11);
+  }
+
   .col-1-of-6 {
     width: calc((100%) / 6);
   }
 
   .col-3-of-6 {
-    width: calc((100%) * 3 / 8);
+    width: 39%;
+    min-width: 37rem;
   }
 
   .col-2-of-6 {
-    width: calc((100% - (#{$gutter-horizontal})) * 2 / 6);
+    width: calc((100%) * 2 / 6);
   }
 
   .col-2-of-10 {

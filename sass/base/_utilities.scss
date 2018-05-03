@@ -5,11 +5,20 @@
 .type-logo {
   height: 3.4rem;
   width: 11rem;
-  border: solid 1.3px #6FDCC1;
+  border: solid 1.3px $text-green;
   border-radius: 32px;
-  color: #6FDCC1;
+  color: $text-green;
   font-size: 1.8rem;
   text-align: center;
   letter-spacing: .5px;
   margin-left: 1rem;
+}
+
+.btn {
+  width: 17rem;
+  height: 3.6rem;
+  border: solid 1.4px #{$text-green};
+  color: $text-green;
+  font-size: 1.7rem;
+  text-transform: uppercase;
 }
