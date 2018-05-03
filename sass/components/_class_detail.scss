@@ -1,11 +1,41 @@
 .class-detail {
   box-shadow: -2px 0rem 2rem 1px rgba(0, 0, 0, 0.62);
-  width: 96rem;
+  width: 95.5%;
   height: 19rem;
-  margin: 0 auto;
-  margin-left: 9rem;
+  color: black;
+  float: left;
+  position: relative;
+  left: 2.5rem;
+  
+  &:first-child {
+    top: 3rem;
+  }
   
   &__img {
-    height: 20rem;
+    height: 18vw;
+  }
+  
+  &__info {
+    max-height: 19rem;
+    overflow: hidden;
+    padding: 1rem;
+  }
+  
+  &__info:first-child {
+    margin-left: calc(0 - #{$gutter-horizontal});
+  }
+  
+  &__type-logos {
+    display: flex;
   }
 }
+
+// .col-1-of-3 {
+//   width: 28.5rem;
+// }
+// .col-2-of-6 {
+// 
+// }
+// .col-1-of-6 {
+// 
+// }

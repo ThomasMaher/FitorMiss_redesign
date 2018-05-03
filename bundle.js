@@ -186,19 +186,41 @@ var ClassDetails = function (_React$Component) {
         { className: "class_row class-detail" },
         _react2.default.createElement(
           "div",
-          { className: "col-1-of-3 class-detail__img" },
-          _react2.default.createElement("img", { src: this.props.img })
+          { className: "col-1-of-3" },
+          _react2.default.createElement("img", { src: this.props.img, className: "class-detail__img" })
         ),
         _react2.default.createElement(
           "div",
           { className: "col-1-of-3 class-detail__info" },
-          this.props.title,
-          this.props.desc
+          _react2.default.createElement(
+            "h2",
+            null,
+            this.props.title
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            this.props.desc
+          )
         ),
         _react2.default.createElement(
           "div",
-          { className: "col-1-of-3 class-detail__reg" },
-          this.props.timRange
+          { className: "col-1-of-3 class-detail__info" },
+          _react2.default.createElement(
+            "div",
+            { className: "class-detail__type-logos" },
+            _react2.default.createElement(
+              "div",
+              { className: "type-logo" },
+              "Yoga"
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "type-logo" },
+              "Cardio"
+            )
+          ),
+          this.props.timeRange
         )
       );
     }
@@ -268,6 +290,16 @@ var Classes = function (_React$Component) {
         _react2.default.createElement(
           'section',
           { className: 'classlist' },
+          _react2.default.createElement(_class_detail2.default, { props: {
+              img: "/images/gym_pic.png",
+              title: "Restorative Yoga",
+              desc: desc,
+              was: '35',
+              now: '17',
+              type: ['Yoga', 'Cardio'],
+              countdown: "4hr 5min 30sec",
+              timeRange: "6:30PM - 7:15PM"
+            } }),
           _react2.default.createElement(_class_detail2.default, { props: {
               img: "/images/gym_pic.png",
               title: "Restorative Yoga",

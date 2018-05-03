@@ -24,6 +24,17 @@ export default class Classes extends React.Component {
         timeRange: "6:30PM - 7:15PM",
       }}/>
       
+      <ClassDetail props={{
+        img: "/images/gym_pic.png",
+        title: "Restorative Yoga",
+        desc,
+        was: '35',
+        now: '17',
+        type: ['Yoga', 'Cardio'],
+        countdown: "4hr 5min 30sec",
+        timeRange: "6:30PM - 7:15PM",
+      }}/>
+      
       </section>
       </div>
     ) 
