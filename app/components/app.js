@@ -23,7 +23,7 @@ const Root = () => {
         <HashRouter>
           <App>
             <Route path="/" component={Header} />
-            <Route path="/classes" component={Classes} />
+            <Route path="/" component={Classes} />
 
           </App>
         </HashRouter>
